@@ -34,9 +34,31 @@
          margin: auto;
          padding: -5px;
      }
-     dialouge {
-         text-align: left;
-     }
+      #popupDialog {
+             position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+            background-image: url("images/UI/Byebye.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            border-radius: 8px;
+            box-shadow: 0px 0px 1px 5000px rgb(153, 217, 234, 0.3);
+            z-index: 1000;
+            visibility: hidden;
+        }
+      .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+       }
     </style>
   </head>
   <body>
@@ -52,18 +74,51 @@
       DAN: Man, it's been a while - heh - hasn't it?
       DAN: I almost feel bad we've been gone so long<span>
 
+      <img style="width: 650px;" src="images/UI/Footer.gif">
     </main></th>
     <th><main>
 
-     HELLO I AM A SIDE PANEL
+      <div id="popupContainer">
+        <h1>LINKS:</h1>
+        <button onclick="openPop()">
+            <img src="images/UI/icons-mspfa.png">
+        </button>
+        <div id="popupDialog">
+        
+        WAIT!!!
+        
+        YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+
+          Are you sure you want to go to MSPFA?
+       
+
+
+            <button onclick="openPop()">
+                NO
+            </button>
+            <a href="url">YES</a>
+        </div>
+    </div>
+    <script>
+        function openPop() {
+            const popDialog =
+                document.getElementById(
+                    "popupDialog"
+                );
+            popDialog.style.visibility =
+                popDialog.style.visibility ===
+                    "visible"
+                    ? "hidden"
+                    : "visible";
+        }
+    </script>
+    </div>
 
     </main></th>
   </tr>
-    <script src="your.js"></script>
-    <noscript>
-      <!-- Optional, place it wherever it makes sense -->
-      JavaScript is not enabled.
-    </noscript>
+    <script>
+
+    </script>
   </body>
 
 </html>
