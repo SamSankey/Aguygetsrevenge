@@ -2,6 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\images",
+    "\\public\\images\\UI",
     "\\public\\OtherStuff"
   ],
   "PreviewInSolutionExplorer": false
