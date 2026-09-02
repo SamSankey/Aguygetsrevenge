@@ -1,128 +1,163 @@
 <!doctype html>
-
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WELCOME TO A GUY GETS REVENGE</title>
     <style>
-     body {
-        background-image: url("images/UI/Background-Guy.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        white-space: pre-line;
-        padding: 15px;
-        font-family: GuyFont;
-     }
-     @font-face {
-        font-family: GuyFont;
-        src: url(OtherStuff/AGuyGetsAFont.ttf);
-     }
-     main {
-         margin: auto;
-         border-radius: 30px;
-         height: fit-content;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         width: min-content;
-         background-color: white;
-         text-align: center;
-     }
-     table {
-         margin: auto;
-         padding: -5px;
-     }
-      #popupDialog {
+        body {
+            background-image: url("images/UI/Background-Guy.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            white-space: pre-line;
+            padding: 15px;
+            font-family: GuyFont;
+        }
+        @font-face {
+            font-family: GuyFont;
+            src: url("OtherStuff/AGuyGetsAFont.ttf");
+        }
+        main {
+            margin: auto;
+            border-radius: 30px;
+            height: fit-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: min-content;
+            background-color: white;
+            text-align: center;
+        }
+        table {
+            margin: auto;
+        }
+        /* POPUP */
+        #popupDialog {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 10px;
+            padding: 20px;
             background-image: url("images/UI/Byebye.png");
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
             border-radius: 10px;
-            box-shadow: 0px 0px 1px 5000px rgb(153, 217, 234, 0.3);
+            box-shadow:
+                0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
             z-index: 1000;
             visibility: hidden;
         }
-      .button {
+        .button {
             border: none;
-            border-width: 0px;
-            background-color: #1fe0;
+            background-color: transparent;
             text-align: center;
             text-decoration: none;
             font-size: 16px;
             cursor: pointer;
-       }
-       .city {
-            background-color: tomato;
-            color: white;
-            border: 2px solid black;
-             margin: 20px;
-            padding: 20px;
         }
+        .dialog {
+            display: flex;
+            margin: 5px;
+            align-items: center;
+        }
+      .wobble {
+        font-size: 1.5rem;
+        }
+
+        @keyframes wobb {
+         0%, 100%   {transform: translateY(random(0, 1)) translateX(-1px)}
+         25%  {transform: translateY(-2px) translateX(0px)}
+         75%  {transform: translateY(1px) translateX(1px)}
+         90%  {transform: translateY(-1px) translateX(-2px)}
+        }
+
+        .wobble span {
+         animation-name: wobb;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+         animation-duration: 700ms;
+         display: inline-block;
+         transform: translateY(0px);
+        }
+
+.spacer {
+  height: 100px;
+}
+
     </style>
-  </head>
-  <body>
-  <table style="width:80%">
-  <tr>
-    <th> <img style="width: 680px;" src ="images/UI/top01.png"><main><img style="width: 70%;" src="images/UI/Logo.png">
-
-      A COMIC BY SAM SANKEY
-
-      <img style="width: 650px;" src="images/UI/Landing.png">
-
-      <span id ="dialouge">GUY: hey, i'm guy 
-      DAN: Man, it's been a while - heh - hasn't it?
-      DAN: I almost feel bad we've been gone so long<span>
-
-      <img style="width: 650px;" src="images/UI/Footer.gif">
-      A Guy Gets Revenge 2023-2026
-    </main></th>
-    <th><main><div id="popupContainer"><h2>LINKS:</h2><button class="button" onclick="openPop()"><img src="images/UI/icons-mspfa.png"></button>
-        <div id="popupDialog">
-        WAIT!!!
-        
-        YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
-         This link takes you to the orginal A Guy Gets Revenge!
-
-          Are you sure you want to leave and go to MSPFA?
-       
-
-
-            <button class="button" onclick="openPop()">
-                NO
-            </button>
-            <a href="url">YES</a>
-        </div>
-        <h2>CONTACT:</h2>
-        thesamsankey@gmail.com
-         
-    </div>
+</head>
+<body>
+    <table style="width:80%">
+        <tr>
+            <th>
+                <img style="width: 690px;" src="images/UI/top01.png">
+                <main>
+                    <img style="width: 70%;" src="images/UI/Logo.png">
+                    A COMIC BY
+                    <div class="wobble">SAM</div><div class="wobble">SANKEY</div>
+                    <img
+                        style="width: 650px;"
+                        src="images/UI/Landing.png">
+                    <div class="dialog"><img style="height:50px;" src="images/Sprites/Guy01.gif"><p><b>GUY:</b> hello, i'm guy revenge!</p>
+                    </div><div class="dialog">
+                     <img style="height:50px;" src="images/Sprites/Guy02.gif"><p><b>GUY:</b> i feel emotions.</p>
+                    </div><div class="dialog">
+                    <img style="height:50px;" src="images/Sprites/Guy03.gif"><p><b>GUY:</b> hello !</p>
+                    </div>
+                    <img style="width: 650px;" src="images/UI/Footer.gif">
+                    A Guy Gets Revenge 2023-2026
+                </main>
+            </th>
+            <th>
+                <main>
+                    <div id="popupContainer">
+                        <h2>LINKS:</h2>
+                        <!-- MSPFA BUTTON -->
+                        <button class="button" onclick="openPop()"><img src="images/UI/icons-mspfa.png">
+                        </button>
+                        <div id="popupDialog">
+                            <h2>WAIT!!!</h2>
+                            YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+                            <br>
+                            This link takes you to the original
+                            A Guy Gets Revenge!
+                            <br>
+                            Are you sure you want to leave and go to MSPFA?
+                            <button
+                                class="button"
+                                onclick="closePop()">
+                                NO
+                            </button>
+                            <a href="url">
+                                YES
+                            </a>
+                        </div>
+                        <h2>CONTACT:</h2>
+                        thesamsankey@gmail.com
+                    </div>
+                </main>
+            </th>
+        </tr>
+    </table>
     <script>
+const all = document.querySelectorAll('.wobble');
+
+all.forEach(el => {
+  let text = el.textContent;
+  text = text.split("");
+  const textCode = text.map((x, idx) => {
+    let delay = (idx + 1) * 50;
+    return `<span style="animation-delay: ${delay}ms">${x}</span>`;
+  })
+
+  el.innerHTML = textCode.join("");
+});
         function openPop() {
-            const popDialog =
-                document.getElementById(
-                    "popupDialog"
-                );
-            popDialog.style.visibility =
-                popDialog.style.visibility ===
-                    "visible"
-                    ? "hidden"
-                    : "visible";
+            document.getElementById("popupDialog").style.visibility = "visible";
+        }
+        function closePop() {
+            document.getElementById("popupDialog").style.visibility = "hidden";
         }
     </script>
-    </div>
-
-    </main></th>
-  </tr>
-    <script>
-
-    </script>
-  </body>
-
+</body>
 </html>
