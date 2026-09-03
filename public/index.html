@@ -41,7 +41,7 @@
             background-image: url("images/UI/Byebye.png");
             background-repeat: no-repeat;
             background-size: cover;
-            border-radius: 10px;
+            border-radius: 6px;
             box-shadow:
                 0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
             z-index: 1000;
@@ -59,6 +59,15 @@
             display: flex;
             margin: 5px;
             align-items: center;
+            text-align: left;
+        }
+        .thebuttons {
+            border: none;
+            background-color: transparent;
+            text-align: right;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
         }
       .wobble {
         font-size: 1.5rem;
@@ -80,21 +89,19 @@
          transform: translateY(0px);
         }
 
-.spacer {
-  height: 100px;
-}
+        .spacer {
+            height: 100px;
+        }
+        td {
+            vertical-align: baseline;
+        }
 
     </style>
-</head>
-<body>
-    <table style="width:80%">
-        <tr>
-            <th>
-                <img style="width: 690px;" src="images/UI/top01.png">
+</head><body><table style="width:80%"><tr><th><img style="width: 690px;" src="images/UI/top01.png">
                 <main>
                     <img style="width: 70%;" src="images/UI/Logo.png">
                     A COMIC BY
-                    <div class="wobble">SAM</div><div class="wobble">SANKEY</div>
+                    SAM SANKEY
                     <img
                         style="width: 650px;"
                         src="images/UI/Landing.png">
@@ -104,16 +111,74 @@
                     </div><div class="dialog">
                     <img style="height:50px;" src="images/Sprites/Guy03.gif"><p><b>GUY:</b> hello !</p>
                     </div>
+                    <div class="thebuttons"></div>
                     <img style="width: 650px;" src="images/UI/Footer.gif">
                     A Guy Gets Revenge 2023-2026
                 </main>
             </th>
             <th>
-                <main>
+                <main style="position:sticky; top:-10px;">
                     <div id="popupContainer">
                         <h2>LINKS:</h2>
                         <!-- MSPFA BUTTON -->
-                        <button class="button" onclick="openPop()"><img src="images/UI/icons-mspfa.png">
+                        <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-mspfa.png">
+                        </button>
+                        <div id="popupDialog">
+                            <h2>WAIT!!!</h2>
+                            YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+                            <br>
+                            This link takes you to the original
+                            A Guy Gets Revenge!
+                            <br>
+                            Are you sure you want to leave and go to MSPFA?
+                            <button
+                                class="button"
+                                onclick="closePop()">
+                                NO
+                            </button>
+                            <a href="url">
+                                YES
+                            </a>
+                        </div>
+                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-map.png">
+                        </button>
+                        <div id="popupDialog">
+                            <h2>WAIT!!!</h2>
+                            YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+                            <br>
+                            This link takes you to the original
+                            A Guy Gets Revenge!
+                            <br>
+                            Are you sure you want to leave and go to MSPFA?
+                            <button
+                                class="button"
+                                onclick="closePop()">
+                                NO
+                            </button>
+                            <a href="url">
+                                YES
+                            </a>
+                        </div>
+                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-info.png">
+                        </button>
+                        <div id="popupDialog">
+                            <h2>WAIT!!!</h2>
+                            YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+                            <br>
+                            This link takes you to the original
+                            A Guy Gets Revenge!
+                            <br>
+                            Are you sure you want to leave and go to MSPFA?
+                            <button
+                                class="button"
+                                onclick="closePop()">
+                                NO
+                            </button>
+                            <a href="url">
+                                YES
+                            </a>
+                        </div>
+                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-og.png">
                         </button>
                         <div id="popupDialog">
                             <h2>WAIT!!!</h2>
@@ -133,12 +198,28 @@
                             </a>
                         </div>
                         <h2>CONTACT:</h2>
-                        thesamsankey@gmail.com
-                    </div>
-                </main>
-            </th>
-        </tr>
-    </table>
+                        thesamsankey
+                        @gmail.com
+                        <br>
+                        @theSamSankey
+                        <br>
+
+                    </div></main></th></tr></table>
+    <main style="width:650px;"><img style="width: 70%;" src="images/UI/Header01.png">
+     <div style="width:650px;max-height:500px;overflow: auto; ">
+     <h2> FRONT PAGE ALMOST DONE </h2><h3>September 3rd 2026</h3> <div class="dialog">Hello! Welcome to the Home Page of A Guy Gets Revenge! Soon I will (hopefully) Be implimenting a cute hit counter, fill up the links, set up pages like the log, extras, and first few pages!!
+      I will also be making icons for email / twitter of the contact sidebar !! I also need to add a bunch of cute lil css animations so all the elements look more put together!</div>
+    <br>
+      <h2> FILLER SEGMENT </h2><h3>September 3rd 2026</h3> <div class="dialog">Hello again! This is just supposed to help me see if my css works lol 
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah
+      Blah blah blah blah blah blah blah blah blah blah blah blah blah</div>
+    <br></div></div></main>
     <script>
 const all = document.querySelectorAll('.wobble');
 

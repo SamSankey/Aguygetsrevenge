@@ -3,8 +3,9 @@
     "",
     "\\public",
     "\\public\\images",
+    "\\public\\images\\UI",
     "\\public\\OtherStuff"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\public\\images\\UI\\Parttwo.png",
   "PreviewInSolutionExplorer": false
 }
