@@ -98,12 +98,61 @@
        #wrap {
         display: none;
        }
+
+       .icon { 
+            display: inline-block;
+            image-rendering: pixelated;
+            -webkit-transition-property: all; 
+            -webkit-transition-duration: 0.3s; 
+            -webkit-transition-timing-function: ease; 
+       } 
+        .icon:hover { 
+            transform: scale(1.06); 
+            image-rendering: pixelated;
+        }
+        .iconr { 
+            display: inline-block;
+            image-rendering: pixelated;
+            cursor: pointer; 
+            -webkit-transition-property: all; 
+            -webkit-transition-duration: 0.3s; 
+            -webkit-transition-timing-function: ease; 
+        } 
+        .iconr:hover { 
+            transform: scale(1.06);
+            transform: translateX(10px);
+            image-rendering: pixelated;
+        }
+        .iconl { 
+          display: inline-block;
+          cursor: pointer; 
+          image-rendering: pixelated;
+         -webkit-transition-property: all; 
+        -webkit-transition-duration: 0.3s; 
+        -webkit-transition-timing-function: ease; 
+        } 
+.iconl:hover { 
+transform: scale(1.06);
+image-rendering: pixelated;
+transform: translateX(-10px);
+}
+
+.icon2 { 
+display: inline-block;
+cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; 
+} 
+.icon2:hover { 
+transform: translateY(11px); 
+}
       
     </style>
     <script src="https://u.widget.st/ar.js"></script>
 </head><body><table style="width:80%"><tr><th><img style="width: 690px;" src="images/UI/top01.png">
                 <main>
-                    <img style="width: 70%;" src="images/UI/Logo.png">
+                    <img style="width: 70%;" class="icon" src="images/UI/Logo.png">
                     A COMIC BY
                     SAM SANKEY
                     <img
@@ -115,9 +164,9 @@
                     </div><div class="dialog">
                     <img style="height:50px;" src="images/Sprites/Guy03.gif"><p><b>GUY:</b> hello !</p>
                     </div>
-                    <div class="thebuttons"></div>
+                    <div class="thebuttons"><img class="iconr" style="height:100px;" src="images/UI/icons-right.png"></div>
                     <img style="width: 650px;" src="images/UI/Footer.gif">
-                    A Guy Gets Revenge 2023-2026
+                    <p style="color:#7F7F7F;">A Guy Gets Revenge 2023-2026</p>
                 </main>
             </th>
             <th>
@@ -125,7 +174,7 @@
                     <div id="popupContainer">
                         <h2>LINKS:</h2>
                         <!-- MSPFA BUTTON -->
-                        <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-mspfa.png">
+                        <button class="button" onclick="openPop()"><img class="icon2" style="height:70px;" src="images/UI/icons-mspfa.png">
                         </button>
                         <div id="popupDialog">
                             <h2>WAIT!!!</h2>
@@ -144,7 +193,7 @@
                                 YES
                             </a>
                         </div>
-                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-map.png">
+                         <button class="button" onclick="openPop()"><img class="icon2" style="height:70px;" src="images/UI/icons-map.png">
                         </button>
                         <div id="popupDialog">
                             <h2>WAIT!!!</h2>
@@ -163,7 +212,7 @@
                                 YES
                             </a>
                         </div>
-                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-info.png">
+                         <button class="button" onclick="openPop()"><img class="icon2" style="height:70px;" src="images/UI/icons-info.png">
                         </button>
                         <div id="popupDialog">
                             <h2>WAIT!!!</h2>
@@ -182,7 +231,7 @@
                                 YES
                             </a>
                         </div>
-                         <button class="button" onclick="openPop()"><img style="height:70px;" src="images/UI/icons-og.png">
+                         <button class="button" onclick="openPop()"><img class="icon2" style="height:70px;" src="images/UI/icons-og.png">
                         </button>
                         <div id="popupDialog">
                             <h2>WAIT!!!</h2>
@@ -210,7 +259,7 @@
                         <ws-widget type="hc" iid="8956"></ws-widget>
 
                     </div></main></th></tr></table>
-    <main style="width:900px;left:-40px;position:relative;"><img style="width: 70%;" src="images/UI/Header01.png">
+    <main style="width:900px;left:-40px;position:relative;"><img class="icon" style="width: 50%;" src="images/UI/Header01.png">
      <div style="width:650px;max-height:500px;overflow: auto; ">
      <h2> FRONT PAGE ALMOST DONE </h2><h3>September 3rd 2026</h3> <div class="dialog">Hello! Welcome to the Home Page of A Guy Gets Revenge! Soon I will (hopefully) Be implimenting a cute hit counter, fill up the links, set up pages like the log, extras, and first few pages!!
       I will also be making icons for email / twitter of the contact sidebar !! I also need to add a bunch of cute lil css animations so all the elements look more put together!</div>

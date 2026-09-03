@@ -4,7 +4,8 @@
     "\\public",
     "\\public\\images",
     "\\public\\images\\UI",
-    "\\public\\OtherStuff"
+    "\\public\\OtherStuff",
+    "\\public\\pages"
   ],
   "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
