@@ -1,0 +1,149 @@
+ html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-image: url("images/UI/Background-Guy.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            white-space: pre-line;
+            padding: 15px;
+            font-family: GuyFont;
+            scroll-behavior: smooth;
+        }
+        @font-face {
+            font-family: GuyFont;
+            src: url("OtherStuff/AGuyGetsAFont.ttf");
+        }
+        main {
+            margin: auto;
+            border-radius: 30px;
+            height: fit-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: min-content;
+            background-color: white;
+            text-align: center;
+        }
+        table {
+            margin: auto;
+        }
+        /* POPUP */
+        #popupDialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url("images/UI/Byebye.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 6px;
+            box-shadow:
+                0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
+            z-index: 1000;
+            visibility: hidden;
+        }
+        .button {
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .dialog {
+            display: flex;
+            margin: 5px;
+            align-items: center;
+            text-align: left;
+        }
+        .thebuttons {
+            border: none;
+            background-color: transparent;
+            text-align: right;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+      .wobble {
+        font-size: 1.5rem;
+        }
+
+        @keyframes wobb {
+         0%, 100%   {transform: translateY(random(0, 1)) translateX(-1px)}
+         25%  {transform: translateY(-2px) translateX(0px)}
+         75%  {transform: translateY(1px) translateX(1px)}
+         90%  {transform: translateY(-1px) translateX(-2px)}
+        }
+
+        .wobble span {
+         animation-name: wobb;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+         animation-duration: 700ms;
+         display: inline-block;
+         transform: translateY(0px);
+        }
+
+        .spacer {
+            height: 100px;
+        }
+        td {
+            vertical-align: baseline;
+        }
+       #wrap {
+        display: none;
+       }
+
+       .icon { 
+            display: inline-block;
+            image-rendering: pixelated;
+            -webkit-transition-property: all; 
+            -webkit-transition-duration: 0.3s; 
+            -webkit-transition-timing-function: ease; 
+       } 
+        .icon:hover { 
+            transform: scale(1.06); 
+            image-rendering: pixelated;
+        }
+        .iconr { 
+            display: inline-block;
+            image-rendering: pixelated;
+            cursor: pointer; 
+            -webkit-transition-property: all; 
+            -webkit-transition-duration: 0.3s; 
+            -webkit-transition-timing-function: ease; 
+        } 
+        .iconr:hover { 
+            transform: scale(1.06);
+            transform: translateX(10px);
+            image-rendering: pixelated;
+        }
+        .iconl { 
+          display: inline-block;
+          cursor: pointer; 
+          image-rendering: pixelated;
+         -webkit-transition-property: all; 
+        -webkit-transition-duration: 0.3s; 
+        -webkit-transition-timing-function: ease; 
+        } 
+        .iconl:hover { 
+            transform: scale(1.06);
+            image-rendering: pixelated;
+            transform: translateX(-10px);
+        }
+
+        .icon2 { 
+            display: inline-block;
+            cursor: pointer; 
+            -webkit-transition-property: all; 
+            -webkit-transition-duration: 0.3s; 
+            -webkit-transition-timing-function: ease; 
+        } 
+        .icon2:hover { 
+            transform: translateY(11px); 
+        }
+        .guy {
+            color: #3F48CC;
+        } 
