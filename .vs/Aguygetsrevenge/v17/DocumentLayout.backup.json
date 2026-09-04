@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\0001.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\pages\\0001.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "0001.html",
+              "DocumentMoniker": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\0001.html",
+              "RelativeDocumentMoniker": "public\\pages\\0001.html",
+              "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\0001.html",
+              "RelativeToolTip": "public\\pages\\0001.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-03T21:04:55.214Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "public\\index.html",
               "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\index.html",
               "RelativeToolTip": "public\\index.html",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAgwHsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAABAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-08-28T00:42:00.2Z",
               "EditorCaption": ""
