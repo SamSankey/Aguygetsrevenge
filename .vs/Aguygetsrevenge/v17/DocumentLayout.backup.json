@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\about.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\about.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\extras.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\pages\\extras.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\map.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\pages\\map.html||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "map.html",
+              "DocumentMoniker": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\map.html",
+              "RelativeDocumentMoniker": "public\\pages\\map.html",
+              "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\map.html",
+              "RelativeToolTip": "public\\pages\\map.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-04T15:56:54.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "extras.html",
+              "DocumentMoniker": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\extras.html",
+              "RelativeDocumentMoniker": "public\\pages\\extras.html",
+              "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\pages\\extras.html",
+              "RelativeToolTip": "public\\pages\\extras.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-04T15:56:41.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "about.html",
+              "DocumentMoniker": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\about.html",
+              "RelativeDocumentMoniker": "public\\about.html",
+              "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\about.html",
+              "RelativeToolTip": "public\\about.html",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwEwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-04T15:56:30.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\index.html",
               "RelativeDocumentMoniker": "public\\index.html",
               "ToolTip": "C:\\Users\\New_OS_11\\Documents\\GitHub\\Aguygetsrevenge\\public\\index.html",
               "RelativeToolTip": "public\\index.html",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAqwJwAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAFIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-08-28T00:42:00.2Z",
               "EditorCaption": ""

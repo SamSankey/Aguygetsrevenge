@@ -4,8 +4,10 @@
     "\\public",
     "\\public\\images",
     "\\public\\images\\Panels",
+    "\\public\\images\\UI",
+    "\\public\\OtherStuff",
     "\\public\\pages"
   ],
-  "SelectedNode": "\\public\\pages\\0001.html",
+  "SelectedNode": "\\public\\images\\UI\\Background-Guy.png",
   "PreviewInSolutionExplorer": false
 }
