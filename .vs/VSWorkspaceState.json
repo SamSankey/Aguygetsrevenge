@@ -3,10 +3,9 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\UI",
     "\\public\\OtherStuff",
     "\\public\\pages"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\public\\images",
   "PreviewInSolutionExplorer": false
 }
