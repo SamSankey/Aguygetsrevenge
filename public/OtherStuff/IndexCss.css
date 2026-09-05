@@ -1,149 +1,428 @@
- html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-image: url("images/UI/Background-Guy.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            white-space: pre-line;
-            padding: 15px;
-            font-family: GuyFont;
-            scroll-behavior: smooth;
-        }
-        @font-face {
-            font-family: GuyFont;
-            src: url("OtherStuff/AGuyGetsAFont.ttf");
-        }
-        main {
-            margin: auto;
-            border-radius: 30px;
-            height: fit-content;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            width: min-content;
-            background-color: white;
-            text-align: center;
-        }
-        table {
-            margin: auto;
-        }
-        /* POPUP */
-        #popupDialog {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-image: url("images/UI/Byebye.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 6px;
-            box-shadow:
-                0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
-            z-index: 1000;
-            visibility: hidden;
-        }
-        .button {
-            border: none;
-            background-color: transparent;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .dialog {
-            display: flex;
-            margin: 5px;
-            align-items: center;
-            text-align: left;
-        }
-        .thebuttons {
-            border: none;
-            background-color: transparent;
-            text-align: right;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-      .wobble {
-        font-size: 1.5rem;
-        }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #C3C3C3;
+    background-image: url("../images/UI/Background-Guy2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    white-space: pre-line;
+    padding: 15px;
+    font-family: GuyFont;
+    scroll-behavior: smooth;
+}
 
-        @keyframes wobb {
-         0%, 100%   {transform: translateY(random(0, 1)) translateX(-1px)}
-         25%  {transform: translateY(-2px) translateX(0px)}
-         75%  {transform: translateY(1px) translateX(1px)}
-         90%  {transform: translateY(-1px) translateX(-2px)}
-        }
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-        .wobble span {
-         animation-name: wobb;
-         animation-iteration-count: infinite;
-         animation-timing-function: linear;
-         animation-duration: 700ms;
-         display: inline-block;
-         transform: translateY(0px);
-        }
+@font-face {
+    font-family: GuyFont;
+    src: url("AGuyGetsAFont.ttf");
+}
 
-        .spacer {
-            height: 100px;
-        }
-        td {
-            vertical-align: baseline;
-        }
-       #wrap {
+main {
+    margin: auto;
+    border-radius: 30px;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: min-content;
+    background-color: white;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.top-layout {
+    width: 80%;
+}
+
+.top-layout th {
+    vertical-align: top;
+}
+
+.top-decoration {
+    width: 690px;
+}
+
+.main-logo {
+    width: 70%;
+}
+
+.star01 {
+    position: absolute;
+    width: 90%;
+    top: 10px;
+    left: 170px;
+    z-index: 1;
+}
+
+.landing-image {
+    width: 650px;
+}
+
+.footer-image {
+    width: 650px;
+}
+
+.dialog {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    text-align: left;
+}
+
+.dialog img {
+    height: 45px;
+}
+
+.guy {
+    color: #3F48CC;
+}
+
+.thebuttons {
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: sticky;
+    top: -10px;
+    width: fit-content;
+    margin-top: 113px;
+}
+
+#popupDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-image: url("../images/UI/Byebye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.icon {
+    display: inline-block;
+    image-rendering: pixelated;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.icon:hover {
+    transform: scale(1.06);
+    image-rendering: pixelated;
+}
+
+.iconr {
+    display: inline-block;
+    image-rendering: pixelated;
+    cursor: pointer;
+    height: 100px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.iconr:hover {
+    transform: translateX(10px);
+    image-rendering: pixelated;
+}
+
+.iconl {
+    display: inline-block;
+    cursor: pointer;
+    image-rendering: pixelated;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.iconl:hover {
+    transform: translateX(-10px);
+    image-rendering: pixelated;
+}
+
+.icon2 {
+    display: inline-block;
+    cursor: pointer;
+    height: 70px;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.icon2:hover {
+    transform: translateY(11px);
+}
+
+.wobble {
+    font-size: 1.5rem;
+}
+
+@keyframes wobb {
+    0%, 100% {
+        transform: translateY(0px) translateX(-1px);
+    }
+    25% {
+        transform: translateY(-2px) translateX(0px);
+    }
+    75% {
+        transform: translateY(1px) translateX(1px);
+    }
+    90% {
+        transform: translateY(-1px) translateX(-2px);
+    }
+}
+
+.wobble span {
+    animation-name: wobb;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 700ms;
+    display: inline-block;
+    transform: translateY(0px);
+}
+
+.spacer {
+    height: 100px;
+}
+
+td {
+    vertical-align: baseline;
+}
+
+#wrap {
+    display: none;
+}
+
+.news-section {
+    width: 900px;
+    left: -40px;
+    position: relative;
+}
+
+.news-header {
+    width: 50%;
+}
+
+.star02 {
+    position: absolute;
+    width: 60%;
+    top: -190px;
+    left: 670px;
+    z-index: 5;
+}
+
+.news-table {
+    width: 100%;
+}
+
+.news-ad {
+    width: 230px;
+}
+
+.post-container {
+    width: 650px;
+    max-height: 520px;
+    overflow: auto;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 7px;
+        overflow-x: hidden;
+        background-attachment: scroll;
+    }
+
+    .top-layout {
+        width: 100% !important;
+        display: block;
+    }
+
+    .top-layout tbody,
+    .top-layout tr {
+        display: block;
+    }
+
+    .top-layout th {
+        display: block;
+        width: 100% !important;
+        padding: 0;
+    }
+
+    .main-content {
+        position: relative;
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .top-decoration {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .main-logo {
+        width: 90% !important;
+        height: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .star01 {
+        width: 70% !important;
+        top: 5px;
+        left: 50%;
+        z-index: 3;
+    }
+
+    .landing-image {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .dialog {
+        margin: 5px 8px;
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+    }
+
+    .dialog img {
+        height: 45px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .iconr {
+        height: 80px;
+        width: auto;
+    }
+
+    .footer-image {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .sidebar {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-top: 15px;
+    }
+
+    #popupContainer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .news-section {
+        width: 100% !important;
+        max-width: 100%;
+        left: 0 !important;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+
+    .news-header {
+        width: 75% !important;
+        height: auto;
+    }
+
+    .star02 {
+        width: 55% !important;
+        top: -70px;
+        left: 50%;
+        z-index: 5;
+    }
+
+    .news-table {
+        width: 100% !important;
+        display: block;
+    }
+
+    .news-table tbody,
+    .news-table tr {
+        display: block;
+    }
+
+    .news-table th {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .news-ad {
         display: none;
-       }
+    }
 
-       .icon { 
-            display: inline-block;
-            image-rendering: pixelated;
-            -webkit-transition-property: all; 
-            -webkit-transition-duration: 0.3s; 
-            -webkit-transition-timing-function: ease; 
-       } 
-        .icon:hover { 
-            transform: scale(1.06); 
-            image-rendering: pixelated;
-        }
-        .iconr { 
-            display: inline-block;
-            image-rendering: pixelated;
-            cursor: pointer; 
-            -webkit-transition-property: all; 
-            -webkit-transition-duration: 0.3s; 
-            -webkit-transition-timing-function: ease; 
-        } 
-        .iconr:hover { 
-            transform: scale(1.06);
-            transform: translateX(10px);
-            image-rendering: pixelated;
-        }
-        .iconl { 
-          display: inline-block;
-          cursor: pointer; 
-          image-rendering: pixelated;
-         -webkit-transition-property: all; 
-        -webkit-transition-duration: 0.3s; 
-        -webkit-transition-timing-function: ease; 
-        } 
-        .iconl:hover { 
-            transform: scale(1.06);
-            image-rendering: pixelated;
-            transform: translateX(-10px);
-        }
+    .post-container {
+        width: 100% !important;
+        max-width: 100%;
+        max-height: none !important;
+        overflow: visible !important;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
 
-        .icon2 { 
-            display: inline-block;
-            cursor: pointer; 
-            -webkit-transition-property: all; 
-            -webkit-transition-duration: 0.3s; 
-            -webkit-transition-timing-function: ease; 
-        } 
-        .icon2:hover { 
-            transform: translateY(11px); 
-        }
-        .guy {
-            color: #3F48CC;
-        } 
+    .post-container .dialog {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        font-size: 0.85rem;
+        line-height: 1.05;
+    }
+
+    #popupDialog {
+        width: 80vw;
+        max-width: 400px;
+        max-height: 80vh;
+        box-sizing: border-box;
+        overflow: auto;
+        padding: 15px;
+    }
+
+    .main-content img,
+    .news-section img {
+        max-width: 100%;
+    }
+}
