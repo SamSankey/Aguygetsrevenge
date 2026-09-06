@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #C3C3C3;
+    background-color: #fff;
     background-image: url("../images/UI/Background-Guy2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -262,34 +262,27 @@ td {
 
 @media (max-width: 600px) {
     body {
-        padding: 7px;
+        padding: 5px;
         overflow-x: hidden;
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 
     .top-layout {
         width: 100% !important;
-        display: block;
-    }
-
-    .top-layout tbody,
-    .top-layout tr {
-        display: block;
+        table-layout: auto;
     }
 
     .top-layout th {
-        display: block;
-        width: 100% !important;
+        vertical-align: top;
         padding: 0;
     }
 
-    .main-content {
-        position: relative;
-        width: 100% !important;
-        max-width: 100%;
-        box-sizing: border-box;
-        border-radius: 25px;
-        overflow: hidden;
+    .top-layout th:first-child {
+        width: auto !important;
+    }
+
+    .top-layout th:last-child {
+        width: auto !important;
     }
 
     .top-decoration {
@@ -297,30 +290,38 @@ td {
         height: auto;
     }
 
+    .main-content {
+        width: 100% !important;
+        max-width: 650px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
     .main-logo {
-        width: 90% !important;
+        width: 70% !important;
         height: auto;
-        position: relative;
-        z-index: 2;
     }
 
     .star01 {
-        width: 70% !important;
-        top: 5px;
-        left: 50%;
-        z-index: 3;
+        width: 90% !important;
+        top: 10px;
+        left: 170px;
+        z-index: 1;
     }
 
     .landing-image {
-        width: 100% !important;
+        width: 650px;
+        max-width: 100%;
         height: auto;
     }
 
     .dialog {
-        margin: 5px 8px;
-        max-width: 100%;
-        box-sizing: border-box;
-        font-size: 0.9rem;
+        display: flex;
+        margin: 5px;
+        align-items: center;
+        text-align: left;
+        font-size: 0.8rem;
     }
 
     .dialog img {
@@ -335,94 +336,99 @@ td {
     }
 
     .footer-image {
-        width: 100% !important;
+        width: 650px;
+        max-width: 100%;
         height: auto;
     }
 
     .sidebar {
-        position: static !important;
-        width: 100% !important;
-        max-width: 100%;
-        box-sizing: border-box;
-        margin-top: 15px;
+        position: sticky !important;
+        top: 5px;
+        width: fit-content !important;
+        margin-top: 113px;
     }
 
     #popupContainer {
-        width: 100%;
-        box-sizing: border-box;
+        font-size: 0.8rem;
     }
 
-    .news-section {
-        width: 100% !important;
-        max-width: 100%;
-        left: 0 !important;
-        position: relative;
-        box-sizing: border-box;
-        margin-top: 30px;
-    }
-
-    .news-header {
-        width: 75% !important;
-        height: auto;
-    }
-
-    .star02 {
-        width: 55% !important;
-        top: -70px;
-        left: 50%;
-        z-index: 5;
-    }
-
-    .news-table {
-        width: 100% !important;
-        display: block;
-    }
-
-    .news-table tbody,
-    .news-table tr {
-        display: block;
-    }
-
-    .news-table th {
-        display: block;
-        width: 100% !important;
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    .news-ad {
-        display: none;
-    }
-
-    .post-container {
-        width: 100% !important;
-        max-width: 100%;
-        max-height: none !important;
-        overflow: visible !important;
-        box-sizing: border-box;
-        padding: 0 10px;
-    }
-
-    .post-container .dialog {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        box-sizing: border-box;
-        font-size: 0.85rem;
-        line-height: 1.05;
+    .icon2 {
+        height: 55px;
+        width: auto;
     }
 
     #popupDialog {
         width: 80vw;
-        max-width: 400px;
+        max-width: 350px;
         max-height: 80vh;
         box-sizing: border-box;
         overflow: auto;
         padding: 15px;
     }
 
-    .main-content img,
-    .news-section img {
+    .news-section {
+        width: 100% !important;
+        max-width: 900px;
+        left: -40px !important;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .news-header {
+        width: 50% !important;
+        height: auto;
+    }
+
+    .star02 {
+        width: 60% !important;
+        top: -190px;
+        left: 670px;
+        z-index: 5;
+    }
+
+    .news-table {
+        width: 100%;
+    }
+
+    .news-ad {
+        width: 230px;
+    }
+
+    .news-ad img {
         max-width: 100%;
+        height: auto;
+    }
+
+    .news-posts {
+        width: auto;
+    }
+
+    .post-container {
+        width: 650px;
+        max-width: calc(100vw - 240px);
+        max-height: 520px;
+        overflow: auto;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+    }
+
+    .post-container .dialog {
+        display: flex;
+        width: auto;
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+
+    .post-container h2 {
+        font-size: 1.1rem;
+    }
+
+    .post-container h3 {
+        font-size: 0.9rem;
+    }
+
+    .news-section > img:last-child {
+        max-width: 100%;
+        height: auto;
     }
 }
