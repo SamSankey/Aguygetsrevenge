@@ -16,28 +16,25 @@
 <body><div id="bottomReveal"><img src="images/UI/Background-Guy3.png" alt=""></div>
 <table class="top-layout" style="width:80%"><tr><th>
             <img class="top-decoration" src="images/UI/top01.png">
-            <main class="main-content"><img class="icon main-logo" src="images/UI/Logo.png">
+              <a class="tooltip"><main class="main-content"><img class="icon main-logo" src="images/UI/Logo.png"><span> A Guy Gets Revenge !! </span></a>
                 <img class="star01" src="images/UI/Star01.png">
                 A COMIC BY
                 SAM SANKEY
                 <img class="landing-image" src="images/UI/Landing.png">
-                <div class="dialog"><img width="55" src="images/Sprites/Guy01.gif"><p class="guy"><b>GUY:</b> hello, i'm guy revenge!</p></div>
-                <div class="dialog"><img width="55" src="images/Sprites/Guy02.gif"> <p class="guy"><b>GUY:</b> i feel emotions.</p></div>
-                <div class="dialog"><img width="55" src="images/Sprites/Guy03.gif"><p class="guy"><b>GUY:</b> hello !</p></div>
-                <div class="thebuttons"> <img class="iconr" src="images/UI/icons-right.png"></div>
-                <img class="footer-image" src="images/UI/Footer.gif">
-
-                <p style="color:#7F7F7F;">A Guy Gets Revenge 2023-2026</p>
-                <img src="images/UI/heart.png">
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy01.gif"><p class="indigo"><b>GUY:</b> hello, i'm guy revenge!</p></div>
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy02.gif"> <p class="indigo"><b>GUY:</b> i feel emotions.</p></div>
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy03.gif"><p class="indigo"><b>GUY:</b> hello !</p></div>
+                <div class="thebuttons"> <img class="iconr" src="images/UI/icons-right.png"></div> <img class="footer-image" src="images/UI/Footer.gif">
+                <p style="color:#7F7F7F;">A Guy Gets Revenge 2023-2026</p> <a class="tooltip"><img src="images/UI/heart.png"><span> R.I.P GAFILD </span></a>
             </main>
         </th>
         <th><main class="sidebar"><div id="popupContainer">
                     <h2>LINKS:</h2>
-                    <a href="about.html"><img class="icon2" width="65" src="images/UI/icons-info.png"></a>
-                    <img class="icon2" width="75" src="images/UI/icons-map.png">
-                    <img class="icon2" width="85" src="images/UI/icons-og.png">
-                    <button class="button" onclick="openPop()">
-                        <img class="icon2" width="73" src="images/UI/icons-mspfa.png">
+                    <a class="tooltip" href="about.html"><img class="icon2" width="65" src="images/UI/icons-info.png"><span> About A Guy Gets Revenge ! </span></a>
+                    <a class="tooltip"><img class="icon2" width="75" src="images/UI/icons-map.png"><span> Adventure Map !</span></a>
+                    <a class="tooltip"><img class="icon2" width="85" src="images/UI/icons-og.png"><span> ??? </span></a>
+                    <a class="tooltip"><button class="button" onclick="openPop()">
+                        <img class="icon2" width="73" src="images/UI/icons-mspfa.png"><span> Orginal Adventure ! </span></a>
                     </button>
 
                     <div id="popupDialog">
@@ -56,12 +53,11 @@
                     </div>
                     <br>
                     <br>
-                    <br>
                     <h2>CONTACT:</h2>
+                    <img src="images/UI/icon-email.png">
                     thesamsankey
                     @gmail.com
-                    @theSamSankey
-
+                    <img src="images/UI/icon-bird.png">@theSamSankey
                     <ws-widget type="hc" iid="8956"></ws-widget>
                 </div>
             </main>
@@ -70,11 +66,11 @@
 </table>
 
 <main class="news-section">
-    <img class="news-header" src="images/UI/Header01.png">
+    <span class="icon"><img class="news-header" src="images/UI/Header01.png"></span>
     <img class="star02" src="images/UI/Star02.png">
 
     <table class="news-table">
-        <tr> <th class="news-ad"><img src="images/Sprites/Ad01.png"></th>
+        <tr> <th class="news-ad"><img Src="images/Sprites/Ad01.png"></th>
             <th class="news-posts"><div class="post-container">
                     <div id="firstpost"></div>
                     <a href="#oldestpost">Go to oldest post?</a>
@@ -86,10 +82,8 @@
                     <div class="dialog">Nothing to report, will delete later</div>
                     <div id="oldestpost"><h2>TO DO LIST</h2>
                     <h3>September 4th 2026</h3>
-                    <div class="dialog"> Alright, Have this down as the oldest post finally. Good to see that fixed, as you can see there is still a lot of work to be done, started working on concept art for the adventure map + the new shadows at the bottom of this page, its been pesky. Also hoping to get extra icons done and make sure this place looks half decent on mobile (may be impossible) I am also going to be reseting the hit counter, my work here has been inflating its amount and thats not very fun is it? </div>
-                    </div>
-                    <p style="color:#7F7F7F;">YOU'VE REACHED THE END, GO BACK UP?</p>
-                    <a href="#firstpost">Yes please!</a></div></th></tr></table></main>
+                    <div class="dialog"> Alright, Have this down as the oldest post finally. Good to see that fixed, as you can see there is still a lot of work to be done, started working on concept art for the adventure map + the new shadows at the bottom of this page, its been pesky. Also hoping to get extra icons done and make sure this place looks half decent on mobile (may be impossible) I am also going to be reseting the hit counter, my work here has been inflating its amount and thats not very fun is it? </div></div>
+                    <p style="color:#7F7F7F;">YOU'VE REACHED THE END, GO BACK UP?</p><a href="#firstpost">Yes please!</a></div></th></tr></table></main>
 <script>
 const all = document.querySelectorAll('.wobble');
 
@@ -111,7 +105,6 @@ function closePop() {
     document.getElementById("popupDialog").style.visibility = "hidden";
 }
 
-/* BACKGROUND PARALLAX */
 function updateBackground() {
     const scrollTop = window.scrollY;
     document.body.style.backgroundPosition =
@@ -122,8 +115,7 @@ window.addEventListener("scroll", updateBackground, { passive:true });
 window.addEventListener("load", updateBackground);
 updateBackground();
 
-/* BOTTOM REVEAL */
-const revealDistance = 1950;
+const revealDistance = 950;
 const bottomReveal = document.getElementById("bottomReveal");
 
 function updateBottomReveal() {
@@ -146,6 +138,18 @@ window.addEventListener("scroll", updateBottomReveal, { passive:true });
 window.addEventListener("resize", updateBottomReveal);
 window.addEventListener("load", updateBottomReveal);
 updateBottomReveal();
+
+var tooltips = document.querySelectorAll('.tooltip span');
+
+window.onmousemove = function (e) {
+    var x = (e.clientX + 20) + 'px',
+        y = (e.clientY + 20) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+        tooltips[i].style.top = y;
+        tooltips[i].style.left = x;
+    }
+};
+
 </script>
 
 </body>
