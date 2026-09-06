@@ -15,6 +15,9 @@ body {
     scroll-behavior:smooth;
     animation:pageFadeIn 1.2s ease-in-out;
     overflow-x:hidden;
+     width: 100%;           /* Fills the screen on mobile */
+     max-width: 1200px;     /* Prevents it from expanding past 1200px on big screens */
+     margin: 0 auto;   
 }
 
 @font-face {
@@ -296,7 +299,7 @@ td {
     position:absolute;
     width:80%;
     max-width:none;
-    top:-6px;
+    top:-60px;
     left:180px;
     z-index:1;
     pointer-events:none;
