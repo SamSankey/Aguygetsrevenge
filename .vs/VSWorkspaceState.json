@@ -3,8 +3,8 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\Panels",
-    "\\public\\images\\UI",
+    "\\public\\images\\Sprites",
+    "\\public\\OtherStuff",
     "\\public\\pages"
   ],
   "PreviewInSolutionExplorer": false
