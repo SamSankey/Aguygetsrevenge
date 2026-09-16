@@ -412,6 +412,16 @@ td {
     overflow:hidden;
     z-index: 100;
 }
+#mapTooltip {
+    position: fixed;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 100;
+    background: white;
+    color: #3F48CC;
+    outline: 3px solid #3F48CC;
+    padding: 2px;
+}
 a {
     color: #3F48CC;
 }

@@ -75,6 +75,13 @@
             <th class="news-posts"><div class="post-container">
                     <div id="firstpost"></div>
                     <a href="#oldestpost">Go to oldest post?</a>
+                    <h2>Been a Minute</h2>
+                    <h3>September 6th 2026</h3>
+                    <div class="dialog">I didnt do any of that??? Sorry lol instead i got started on the ??? page, i also want to start adding images here, so i made a folder for that (easiest thing on the planet)
+                    <br>
+                    <img width="124px" src="images/ConceptArt/Concepts-website.png"> <img width="124px" src="images/ConceptArt/Concepts-website2.png"> <img width="124px" src="images/ConceptArt/Concepts-websitencomic.png"> <img width="124px" src="images/ConceptArt/City.png">
+</div>
+                    <h2>Looking good</h2>
                     <h2>Alright</h2>
                     <h3>September 6th 2026</h3>
                     <div class="dialog">Going to try to finish the inspirations segment of the about page today! As well as get started on the template for page 1 & the map (hopefull) </div>
@@ -141,16 +148,20 @@ window.addEventListener("resize", updateBottomReveal);
 window.addEventListener("load", updateBottomReveal);
 updateBottomReveal();
 
-var tooltips = document.querySelectorAll('.tooltip span');
+const tooltips = document.querySelectorAll('.tooltip span');
 
-window.onmousemove = function (e) {
-    var x = (e.clientX + 20) + 'px',
-        y = (e.clientY + 20) + 'px';
-    for (var i = 0; i < tooltips.length; i++) {
-        tooltips[i].style.top = y;
-        tooltips[i].style.left = x;
-    }
-};
+window.addEventListener("mousemove", function (e) {
+
+    const x = (e.clientX + 20) + "px";
+    const y = (e.clientY + 20) + "px";
+
+    tooltips.forEach(function (tooltip) {
+        tooltip.style.top = y;
+        tooltip.style.left = x;
+    });
+
+});
+
 </script>
 </script>
 

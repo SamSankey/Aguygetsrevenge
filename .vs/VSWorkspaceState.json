@@ -3,9 +3,11 @@
     "",
     "\\public",
     "\\public\\images",
+    "\\public\\images\\Conceptart",
     "\\public\\images\\Sprites",
     "\\public\\OtherStuff",
     "\\public\\pages"
   ],
+  "SelectedNode": "\\public\\images\\Conceptart",
   "PreviewInSolutionExplorer": false
 }

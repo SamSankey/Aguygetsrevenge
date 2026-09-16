@@ -345,6 +345,53 @@ infoTabs.forEach(tab => {
 });
 
 showCharacter(14);
+
+const tooltips = document.querySelectorAll('.tooltip span');
+
+window.addEventListener("mousemove", function (e) {
+
+    const x = (e.clientX + 20) + "px";
+    const y = (e.clientY + 20) + "px";
+
+    tooltips.forEach(function (tooltip) {
+        tooltip.style.top = y;
+        tooltip.style.left = x;
+    });
+
+});
+
+const tooltips = document.querySelectorAll('.tooltip span');
+
+window.addEventListener('mousemove', function (e) {
+    const x = (e.clientX + 20) + 'px';
+    const y = (e.clientY + 20) + 'px';
+
+    tooltips.forEach(function (tooltip) {
+        tooltip.style.top = y;
+        tooltip.style.left = x;
+    });
+});
+
+const mapTooltip = document.getElementById('mapTooltip');
+const mapAreas = document.querySelectorAll('area[data-tooltip]');
+
+mapAreas.forEach(function (area) {
+
+    area.addEventListener('mouseenter', function () {
+        mapTooltip.textContent = this.dataset.tooltip;
+        mapTooltip.style.visibility = 'visible';
+    });
+
+    area.addEventListener('mouseleave', function () {
+        mapTooltip.style.visibility = 'hidden';
+    });
+
+    area.addEventListener('mousemove', function (e) {
+        mapTooltip.style.left = (e.clientX + 20) + 'px';
+        mapTooltip.style.top = (e.clientY + 20) + 'px';
+    });
+
+});
 </script>
 
 </body>
