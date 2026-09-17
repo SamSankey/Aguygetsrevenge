@@ -3,10 +3,12 @@
     "",
     "\\public",
     "\\public\\images",
+    "\\public\\images\\ConceptArt",
+    "\\public\\images\\ConceptArt\\Pages",
     "\\public\\images\\Sprites",
     "\\public\\OtherStuff",
     "\\public\\pages"
   ],
-  "SelectedNode": "\\public\\OtherStuff\\IndexCss.css",
+  "SelectedNode": "\\public\\pages\\world.html",
   "PreviewInSolutionExplorer": false
 }

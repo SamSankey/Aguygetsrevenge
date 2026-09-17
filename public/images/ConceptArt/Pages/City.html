@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WELCOME TO A GUY GETS REVENGE</title>
+     <link rel="stylesheet" href="../OtherStuff/IndexCss.css">
+    <style>
+          body {
+            font-family: GuyFont;
+            white-space:pre-line;
+        }
+          @font-face {
+            font-family: GuyFont;
+            src: url("../OtherStuff/AGuyGetsAFont.ttf");
+        }
+        #popupDialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-image: url("../images/UI/Byebye.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 6px;
+            box-shadow:
+            0px 0px 1px 5000px rgba(153, 217, 234, 0.3);
+            z-index: 1000;
+            visibility: hidden;
+        }
+    </style>
+    <script src="https://u.widget.st/ar.js"></script>
+</head><body>
+   
+            <main>
+            <img class="top-decoration" src="images/UI/top01.png">
+              <a class="tooltip"><main class="main-content"><img class="icon main-logo" src="images/UI/Logo.png"><span> A Guy Gets Revenge !! </span></a>
+                <img class="star01" src="images/UI/Star01.png">
+                A COMIC BY
+                SAM SANKEY
+                <img class="landing-image" src="images/UI/Landing.png">
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy01.gif"><p class="indigo"><b>GUY:</b> hello, i'm guy revenge!</p></div>
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy02.gif"> <p class="indigo"><b>GUY:</b> i feel emotions.</p></div>
+                <div class="dialog"><img width="55px" src="images/Sprites/Guy03.gif"><p class="indigo"><b>GUY:</b> hello !</p></div>
+                <div class="thebuttons"> <img class="iconr" src="images/UI/icons-right.png"></div> <img class="footer-image" src="images/UI/Footer.gif">
+                <p style="color:#7F7F7F;">A Guy Gets Revenge 2023-2026</p> <a class="tooltip"><img src="images/UI/heart.png"><span> R.I.P GAFILD </span></a>
+            </main>
+ 
+    </body>
+    <footer>
+<script>
+const all = document.querySelectorAll('.wobble');
+
+all.forEach(el => {
+  let text = el.textContent;
+  text = text.split("");
+  const textCode = text.map((x, idx) => {
+    let delay = (idx + 1) * 50;
+    return `<span style="animation-delay: ${delay}ms">${x}</span>`;
+  })
+
+  el.innerHTML = textCode.join("");
+});
+        function openPop() {
+            document.getElementById("popupDialog").style.visibility = "visible";
+        }
+        function closePop() {
+            document.getElementById("popupDialog").style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

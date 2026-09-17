@@ -18,6 +18,9 @@ body {
      max-width: 1200px;     /* Prevents it from expanding past 1200px on big screens */
      margin: 0 auto;   
 }
+th, td {
+  border-spacing: 30px;
+}
 
 @font-face {
     font-family:GuyFont;
@@ -272,12 +275,24 @@ td {
 .sidebar {
     position:sticky;
     top:0;
-    width:180px;
     box-sizing:border-box;
     margin-top:113px;
-    background-color:rgba(255,255,255,0.78);
     border-radius:15px;
     overflow:visible;
+    z-index:20;
+}
+
+.left-column {
+vertical-align:top;
+padding:0;
+}
+
+.sidebar-column {
+    vertical-align:top;
+    padding:0;
+    width:180px;
+    position:relative;
+    z-index:20;
 }
 
 #popupContainer {
@@ -318,8 +333,7 @@ td {
 .news-section {
     position:relative;
     width:900px;
-    margin:80px auto 0;
-    left:-40px;
+    margin:30px auto 0;
     text-align:center;
     z-index:2;
 }
@@ -693,4 +707,15 @@ a {
     .character-text {
         height:245px;
     }
+}
+#bottomReveal {
+    position:fixed;
+    left:50%;
+    bottom:0;
+    width:100vw;
+    height:auto;
+    z-index:1;
+    pointer-events:none;
+    transform:translate(-50%,100%);
+    will-change:transform;
 }
