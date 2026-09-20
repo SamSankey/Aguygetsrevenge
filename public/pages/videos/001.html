@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banban Alex Rose</title>
+<style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+.custom-video-player {
+    position: relative;
+    width: 650px;
+    height: 450px;
+    overflow: hidden;
+    background: black;
+}
+
+.story-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.video-controls {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 12px;
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+    z-index: 5;
+}
+.custom-video-player:hover .video-controls,
+.custom-video-player:focus-within .video-controls {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-video-player.video-ended .video-controls {
+    opacity: 0;
+    visibility: hidden;
+}
+.video-controls button,
+.restart-button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.video-controls img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: transform 0.15s ease;
+}
+
+.video-controls button:hover img {
+    transform: scale(1.08);
+}
+.restart-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+.restart-button img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.15s ease;
+}
+
+.restart-button:hover img {
+    transform: scale(1.08);
+}
+
+.custom-video-player.video-ended .restart-button {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+@media (max-width: 600px) {
+
+    .video-controls {
+        left: 12px;
+        bottom: 12px;
+        gap: 8px;
+    }
+
+    .video-controls img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .restart-button img {
+        width: 65px;
+        height: 65px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="custom-video-player">
+
+    <video
+        class="story-video"
+        preload="metadata"
+        playsinline
+    >
+        <source
+            src="../../images/Videos/001.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support HTML video.
+    </video>
+
+
+    <div class="video-controls">
+
+        <button
+            class="play-button"
+            type="button"
+            aria-label="Play video"
+        >
+            <img
+                class="play-icon"
+                src="../../images/UI/VideoPlayer/play.png"
+                alt=""
+            >
+        </button>
+
+
+        <button
+            class="volume-button"
+            type="button"
+            aria-label="Change volume"
+        >
+            <img
+                class="volume-icon"
+                src="../../images/UI/VideoPlayer/volume-full.png"
+                alt=""
+            >
+        </button>
+
+    </div>
+
+
+    <button
+        class="restart-button"
+        type="button"
+        aria-label="Restart video"
+    >
+        <img
+            src="../../images/UI/VideoPlayer/restart.png"
+            alt=""
+        >
+    </button>
+
+</div>
+
+
+<script>
+const player = document.querySelector(".custom-video-player");
+
+const video = player.querySelector(".story-video");
+
+const playButton = player.querySelector(".play-button");
+const playIcon = player.querySelector(".play-icon");
+
+const volumeButton = player.querySelector(".volume-button");
+const volumeIcon = player.querySelector(".volume-icon");
+
+const restartButton = player.querySelector(".restart-button");
+
+
+const icons = {
+    play: "../../images/UI/VideoPlayer/play.png",
+    pause: "../../images/UI/VideoPlayer/pause.png",
+
+    mute: "../../images/UI/VideoPlayer/volume-mute.png",
+    quiet: "../../images/UI/VideoPlayer/volume-quiet.png",
+    medium: "../../images/UI/VideoPlayer/volume-medium.png",
+    full: "../../images/UI/VideoPlayer/volume-full.png"
+};
+
+
+/* PLAY / PAUSE */
+
+function updatePlayIcon() {
+
+    if (video.paused) {
+
+        playIcon.src = icons.play;
+
+        playButton.setAttribute(
+            "aria-label",
+            "Play video"
+        );
+
+    } else {
+
+        playIcon.src = icons.pause;
+
+        playButton.setAttribute(
+            "aria-label",
+            "Pause video"
+        );
+
+    }
+
+}
+
+
+playButton.addEventListener("click", function() {
+
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+
+});
+
+
+video.addEventListener("play", function() {
+
+    player.classList.remove("video-ended");
+
+    updatePlayIcon();
+
+});
+
+
+video.addEventListener("pause", function() {
+
+    updatePlayIcon();
+
+});
+
+
+/* VOLUME */
+
+const volumeLevels = [
+
+    {
+        name: "mute",
+        volume: 0
+    },
+
+    {
+        name: "quiet",
+        volume: 0.25
+    },
+
+    {
+        name: "medium",
+        volume: 0.55
+    },
+
+    {
+        name: "full",
+        volume: 1
+    }
+
+];
+
+
+let currentVolume = 3;
+
+
+function updateVolume() {
+
+    const setting = volumeLevels[currentVolume];
+
+    if (setting.volume === 0) {
+
+        video.muted = true;
+
+    } else {
+
+        video.muted = false;
+        video.volume = setting.volume;
+
+    }
+
+    volumeIcon.src = icons[setting.name];
+
+    volumeButton.setAttribute(
+        "aria-label",
+        "Volume: " + setting.name
+    );
+
+}
+
+
+volumeButton.addEventListener("click", function() {
+
+    currentVolume++;
+
+    if (currentVolume >= volumeLevels.length) {
+        currentVolume = 0;
+    }
+
+    updateVolume();
+
+});
+
+
+/* VIDEO FINISHED */
+
+video.addEventListener("ended", function() {
+
+    player.classList.add("video-ended");
+
+    updatePlayIcon();
+
+});
+
+
+/* RESTART */
+
+restartButton.addEventListener("click", function() {
+
+    video.currentTime = 0;
+
+    player.classList.remove("video-ended");
+
+    video.play();
+
+});
+
+
+updatePlayIcon();
+updateVolume();
+</script>
+
+</body>
+</html>

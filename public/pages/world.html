@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WELCOME TO A GUY GETS REVENGE</title>
+<link rel="icon" type="image/x-icon" href="https://file.garden/X7qRe-a95myVynb-/portfolio/Favicon.png">
 <link rel="stylesheet" href="../OtherStuff/IndexCss.css">
 
 <style>
@@ -255,8 +256,8 @@ padding:5px 2px;
 .character-palette {
 grid-area:palette;
 display:grid;
-grid-template-columns:repeat(10,1fr);
-grid-template-rows:repeat(2,1fr);
+grid-template-columns:repeat(10,0.4fr);
+grid-template-rows:repeat(2,0.4fr);
 grid-auto-flow:column;
 gap:3px;
 box-sizing:border-box;
@@ -321,16 +322,6 @@ min-width:0;
 overflow-wrap:anywhere;
 }
 
-/* SMALLER HIT COUNTER */
-
-.sidebar ws-widget {
-display:block;
-width:55px !important;
-max-width:55px !important;
-margin:5px auto 0;
-transform:scale(.65);
-transform-origin:top center;
-}
 
 /* POPUP */
 
@@ -416,20 +407,7 @@ display:none;
 <script src="https://u.widget.st/ar.js"></script>
 </head>
 
-<body>
-<div id="bottomReveal">
-<img src="../images/UI/Background-Guy3.png" alt="">
-</div>
-
-<div class="page-layout">
-
-<div class="character-area">
-
-<section class="character-section">
-
-<div class="character-ui">
-
-<div class="character-palette">
+<body><div id="bottomReveal"><img src="../images/UI/Background-Guy3.png" alt=""></div><div class="page-layout"><div class="character-area"><section class="character-section"><div class="character-ui"><div class="character-palette">
 <button type="button" class="character-tab active" data-character="0"></button>
 <button type="button" class="character-tab" data-character="1"></button>
 <button type="button" class="character-tab" data-character="2"></button>
@@ -458,10 +436,7 @@ display:none;
 <img id="characterImage" src="../images/Sprites/Guy01.png" alt="Guy">
 </div>
 
-<div class="character-info"><h2 id="characterName">GUY</h2><div class="character-text">
-<div class="character-page active" data-page="info">
-<h3>INFO</h3><p id="characterInfo">This is where information about the character will go!</p></div><div class="character-page" data-page="stats"><h3>STATS</h3><p id="characterStats">Hello</p></div><div class="character-page" data-page="extras"><h3>EXTRAS</h3><p id="characterExtras">Fun facts and other character information!</p></div>
-</div>
+<div class="character-info"><h2 id="characterName">GUY</h2><div class="character-text"><div class="character-page active" data-page="info"><h3>INFO</h3><p id="characterInfo">This is where information about the character will go!</p></div><div class="character-page" data-page="stats"><h3>STATS</h3><p id="characterStats">Hello</p></div><div class="character-page" data-page="extras"><h3>EXTRAS</h3><p id="characterExtras">Fun facts and other character information!</p></div></div>
 <div class="character-info-tabs">
 <button type="button" class="info-tab active" data-page="info">INFO</button>
 <button type="button" class="info-tab" data-page="stats">STATS</button>
@@ -470,42 +445,46 @@ display:none;
 </div>
 </div></div></section></div>
 <div class="sidebar-area">
-<main class="sidebar">
-<div id="popupContainer">
-<h2>LINKS:</h2>
-<a class="tooltip" href="../about.html""><img class="icon2" width="75" src="../images/UI/icons-map.png"><span> About A Guy Gets Revenge !</span></a>
-<a class="tooltip"><img class="icon2" width="75" src="../images/UI/icons-map.png"><span> Adventure Map !</span></a>
-<a class="tooltip"><img class="icon2" width="75" src="../images/UI/icons-map.png"><span> Go Back Home? !</span></a>
-<a class="tooltip"><button class="button" type="button" onclick="openPop()"><img class="icon2" width="73" src="../images/UI/icons-mspfa.png"><span> Orginal Adventure ! </span></button></a>
-<div id="popupDialog">
-<h2>WAIT!!!</h2>
+<main class="sidebar"><div id="popupContainer">
+                    <h2>LINKS:</h2>
+                    <a class="tooltip" href="../about.html"><img class="icon2" width="65" src="../images/UI/icons-info.png"><span> About A Guy Gets Revenge ! </span></a>
+                    <a class="tooltip"><img class="icon2" width="75" src="../images/UI/icons-map.png"><span> Adventure Map !</span></a>
+                                           <a class="tooltip" href="../index.html"><img class="icon2" style="height:70px;" src="../images/UI/icons-home.png"><span> Go back Home? </span> </a>
+                    <a class="tooltip"><button class="button" onclick="openPop()">
+                        <img class="icon2" width="73" src="../images/UI/icons-mspfa.png"><span> Orginal Adventure ! </span></a>
+                    </button>
 
-YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
-
-<br>
-Oh my god
-A Guy Gets Revenge!
-<br>
-Are you sure you want to leave and go to MSPFA?
-<button class="button" type="button" onclick="closePop()"><img width="68" class="icon" src="../images/UI/No.png"></button>
-<a href="https://mspfa.com/?s=45318&p=1"><img width="75" class="icon" src="../images/UI/Yes.png"></a>
-</div>
-<br>
-<br>
-<h2>CONTACT:</h2>
-<img src="../images/UI/icon-email.png">
-thesamsankey
-@gmail.com
-<img src="../images/UI/icon-bird.png">@theSamSankey
-<ws-widget type="hc" iid="8956"></ws-widget>
-</div></main></div>
+                    <div id="popupDialog">
+                        <h2>WAIT!!!</h2>
+                        YOU'RE ABOUT TO LEAVE AGETSREVENGE.COM!
+                        <br>
+                        Oh my god
+                        A Guy Gets Revenge!
+                        <br>
+                        Are you sure you want to leave and go to MSPFA?
+                        <button class="button" onclick="closePop()">
+                            <img width="68px" class="icon" src="../images/UI/No.png">
+                        </button>
+                        <a href="https://mspfa.com/?s=45318&p=1"><img width="75px" class="icon" src="../images/UI/Yes.png"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <h2>CONTACT:</h2>
+                    <img src="../images/UI/icon-email.png">
+                    thesamsankey
+                    @gmail.com
+                    <img src="../images/UI/icon-bird.png">@theSamSankey
+                    <ws-widget type="hc" iid="8956"></ws-widget>
+                </div>
+            </main></div>
 <main class="concept-art-section">
-<div id="newsletter1"></div><br>
-<div class="post-container">
-<img width="810" src="../images/ConceptArt/City.png" alt=""><br>
+ <div class="dialog"> Concept art will include spoilers! Do try to be up to date before browsing!
+ It will include site concepts, location concepts, character concepts, etc I will usually be cherrypicking and adding art from the orginal mspfa as its relevent
+</div><div id="newsletter1"></div><br><div class="post-container"><img width="810" src="../images/ConceptArt/City.png" alt=""><br>
 <img width="810" src="../images/ConceptArt/Concepts-worldnwebsite2.png" alt="">
 <br>
 <br>
+<img width="810" src="../images/ConceptArt/House.gif" alt="">
 <img width="810" src="../images/ConceptArt/Concepts-website2.png" alt="">
 <br>
 <br>
@@ -600,163 +579,163 @@ tooltip.style.left = x;
 const characters = [
 
 {
-name:"SECRET",
-image:"../images/Sprites/Guy01.png",
-info:"You found me the secret guy, you have found me",
-stats:"YOUVE FOUND ME",
-extras:"by jove youve found me, finally, i have been found, secret guy, found alas, free from secrecy, found and alive and well, it was like a schrodinger's cat like situation where i myself didnt know i was alive or dead until you found me, this is became i am a 2d image in a 2d world so i have no way to observe myself and it is easy, especially when you have a lot of time to cross out the confirmation that thought means existence or life. Anyways please dont go, as soon as you stop reading my thoughts no longer have an outlet, you cant stop reading id like to be known and heard, i have so little text boxes to speak in and i wasted my first two, come on please keep scrolling and reading i have so little to talk about my life is so small and so different, you cant take this from me please, i am secret guy who is a placeholder image while more are made, not only is my life futile and so small and so transient you cant take this from me, what little time i have to speak, please listen please stay. Youve lived such a strange life to me outside of a screen , what could i talk about that you couldnt god, im such a useless piece of shit, just stop reading i have nothing to say, hell whatever speak for me <input><br><br><br><br><br><br> I lied i lied i lied im sorry please dont speak for me i dont like that I dont know what to do , just go ok, im sorry"
+name:"MARI",
+image:"../images/Characters/Mari.png",
+info:"Playing to more tropes than she can admitm Mari is often misunderstood but always trying for betterment and to be the person who does the right thing. She tends to jump to conclussions quickly and plays a part, she thinks the world is a stage even when it really doesn't have to be.<br><br> Say what you want about this worldview it pushes her to be very brave.",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✦✦✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦Played the flute<br>✦Fond of birds<br>✦???<br>"
 },
 
 {
 name:"RAYANNE",
-image:"../images/Characters/Character02.png",
-info:"Character 02's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 02's extra information goes here!"
+image:"../images/Characters/Rayanne2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✧✧✧</span><br>FLAVOUR<br><span>✦✦✦✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 },
 
 {
 name:"JACOBI",
-image:"../images/Characters/Character03.png",
-info:"Character 03's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 03's extra information goes here!"
+image:"../images/Characters/Jacobi2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✧✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✦✧✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 },
 
 {
 name:"FIRESTORM",
-image:"../images/Characters/Character04.png",
-info:"Character 04's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 04's extra information goes here!"
+image:"../images/Characters/Firestorm2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✦✦✧✧<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 },
 
 {
 name:"LIZZA",
-image:"../images/Characters/Character05.png",
-info:"Character 05's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 05's extra information goes here!"
+image:"../images/Characters/Lizza2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✧✧✧✧</span><br>FLAVOUR<br><span>✧✧✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 },
 
 {
 name:"KILLIAN",
-image:"../images/Characters/Character06.png",
-info:"Character 06's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 06's extra information goes here!"
-},
-
-{
-name:"SUNS WAKING DAYDREAM",
-image:"../images/Characters/Character07.png",
-info:"Character 07's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 07's extra information goes here!"
-},
-
-{
-name:"CAYDEN",
-image:"../images/Characters/Character08.png",
-info:"Character 08's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 08's extra information goes here!"
-},
-
-{
-name:"WILSON",
-image:"../images/Characters/Character09.png",
-info:"Character 09's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 09's extra information goes here!"
-},
-
-{
-name:"OSWIN",
-image:"../images/Characters/Character10.png",
-info:"Character 10's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 10's extra information goes here!"
-},
-
-{
-name:"NESTER",
-image:"../images/Characters/Character11.png",
-info:"Character 11's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 11's extra information goes here!"
-},
-
-{
-name:"LIME",
-image:"../images/Characters/Character12.png",
-info:"Character 12's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 12's extra information goes here!"
-},
-
-{
-name:"PB&J KID",
-image:"../images/Characters/Character13.png",
-info:"Character 13's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 13's extra information goes here!"
-},
-
-{
-name:"MICK",
-image:"../images/Characters/Character14.png",
-info:"Character 14's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 14's extra information goes here!"
-},
-
-{
-name:"GUY",
-image:"../images/Sprites/Guy01.png",
-info:"Our wonderful titual hero!!<br> Look at him go! Famously anxious in most situations, though often for good reason. A little sheltered a little not, funny story there. Of course hes THE Jr Gafild aficionado and lorehead (dont get him started). <br><br> You'll love him I promose",
-stats:"Strength: 1<br>Speed: 1<br>Smarts: 2<br><br><br> Maybe scrap segment???",
-extras:"- Speaks really <i>really</i> quietly<br><br>- Does not have a phone or computer for his own good.<br><br>- Does watch a lot of Television though.<br><br>- Cannot stand the smell of cleaning products, telling guys it knocks him out was his best lie he could come up<br><br>- Not a good liar<br><br>- Does not lie enough for that to matter<br><br>- Tends to dramatize small things<br><br>- Seems WAY angrier then he actually is<br><br>- Not a lot of friends<br><br>- Those two things may be related"
-},
-
-{
-name:"ZARTIA",
-image:"../images/Characters/Character16.png",
-info:"Character 16's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 16's extra information goes here!"
-},
-
-{
-name:"MOON WADES THE WATER",
-image:"../images/Characters/Character17.png",
-info:"Character 17's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 17's extra information goes here!"
-},
-
-{
-name:"DAN",
-image:"../images/Characters/Character18.png",
-info:"Character 18's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 18's extra information goes here!"
-},
-
-{
-name:"LILAC",
-image:"../images/Characters/Character18.png",
-info:"Character 18's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 18's extra information goes here!"
+image:"../images/Characters/Killian2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✧<br></span>FEELINGS<br><span>✦✦✦✦✧<br></span>KICKASS<br><span>✦✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✦✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 },
 
 {
 name:"???",
-image:"../images/Characters/Character18.png",
-info:"Character 18's information goes here.",
-stats:"Strength: ???<br>Speed: ???<br>Smarts: ???",
-extras:"Character 18's extra information goes here!"
+image:"../images/Characters/SWDD.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✦<br></span>FEELINGS<br><span>✦✦✦✦✦<br></span>KICKASS<br><span>✦✦✦✦✦</span><br>FLAVOUR<br><span>✦✦✦✦✦</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"CAYDEN",
+image:"../images/Characters/Cayden2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✧✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✦✦✦</span><br>FLAVOUR<br><span>✦✦✦✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"WILSON",
+image:"../images/Characters/Wilson2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✦✦✦✧<br></span>KICKASS<br><span>✦✦✦✦✦</span><br>FLAVOUR<br><span>✦✧✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"OSWIN",
+image:"../images/Characters/Oswin2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✧<br></span>FEELINGS<br><span>✦✦✧✧✧<br></span>KICKASS<br><span>✦✦✦✧✧</span><br>FLAVOUR<br><span>✦✦✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"NESTER",
+image:"../images/Characters/Nester.png",
+info:"Not much is known about him yet, but hes a very nose to the grindstone kinda guy, alone either by choice or circumstance he pulls himself by his bootstraps and will get the going done. Even if its harder then  it has any right to be. <br><br>Hes an action first think later and often will remuniate after the fact.",
+stats:"SMARTS<br><span>✦✦✦✦✧<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✦✦✧</span><br>FLAVOUR<br><span>✦✦✦✦✦</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"LIME",
+image:"../images/Characters/Lime2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✧✧✧✧<br></span>FEELINGS<br><span>✧✧✧✧✧<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"PB&J KID",
+image:"../images/Characters/PB.png",
+info:"Keeps to himself and thats ok. He loves to paint and draw dreams and pictures for his friends (not that theyll ever see them). Anxious to overstep and excited to get closer to our main group it creates an unfortunate limbo Todd has exisited in for years in many facets of life.<br><br> Its hard not knowing whats going to happen, how do you know you're doing the right thing?'",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✦✧✧✧<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"MICK",
+image:"../images/Characters/Mick2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✧✧✧✧<br></span>FEELINGS<br><span>✦✦✧✧✧<br></span>KICKASS<br><span>✦✦✦✧✧</span><br>FLAVOUR<br><span>✦✦✦✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"GUY",
+image:"../images/Characters/Guy.png",
+info:"Our wonderful titual hero!!<br> Look at him go! Famously anxious in most situations, though often for good reason. A little sheltered a little not, funny story there. Of course hes THE Jr Gafild aficionado and lorehead (dont get him started). <br><br> You'll love him I promose",
+stats:"SMARTS<br><span>✦✧✧✧✧<br></span>FEELINGS<br><span>✦✦✦✧✧<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✧✧✧</span>",
+extras:"✦Enjoys simplicity<br>✦Rarely lies, but tells small inane ones<br>✦???<br>"
+},
+
+{
+name:"ZARTIA",
+image:"../images/Characters/Zarita2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✦<br></span>FEELINGS<br><span>✦✧✧✧✧<br></span>KICKASS<br><span>✦✦✦✧✧</span><br>FLAVOUR<br><span>✦✧✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"???",
+image:"../images/Characters/MWTW.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✦<br></span>FEELINGS<br><span>✦✦✦✦✦<br></span>KICKASS<br><span>✦✦✦✦✦</span><br>FLAVOUR<br><span>✦✦✦✦✦</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"DAN",
+image:"../images/Characters/Dan.png",
+info:"Dan is very special, they are one of the kindest people you will ever meet. Not to be confused with forgiving or stupid. Dan has a solid head on their shoulders even if a little quick to change subject. Dan likes to care for things, people, plants, the house - learned from their parents. <br><br> Some could argue their relationship with Guy often veers into pet project more than friend.",
+stats:"SMARTS<br><span>✦✦✦✧✧<br></span>FEELINGS<br><span>✦✦✦✦✦<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦Strange resentment of authority<br>✦Quick to make friends<br>✦Enterains themself with small projects of variying success<br>"
+},
+
+{
+name:"LILAC",
+image:"../images/Characters/Lilac2.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✦✦✧<br></span>FEELINGS<br><span>✦✦✧✧✧<br></span>KICKASS<br><span>✧✧✧✧✧</span><br>FLAVOUR<br><span>✦✧✧✧✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
+},
+
+{
+name:"???",
+image:"../images/Characters/SWDD.png",
+info:"???",
+stats:"SMARTS<br><span>✦✦✧✧✧<br></span>FEELINGS<br><span>✦✦✧✧✧<br></span>KICKASS<br><span>✦✦✦✧✧</span><br>FLAVOUR<br><span>✦✦✦✦✧</span>",
+extras:"✦???<br>✦???<br>✦???<br>"
 }
 
 ];
@@ -792,9 +771,7 @@ characterTabs[index].classList.add("active");
 characterTabs.forEach(tab => {
 
 tab.addEventListener("click",function() {
-
 showCharacter(Number(this.dataset.character));
-
 });
 
 });
@@ -824,7 +801,6 @@ document.querySelector(
 });
 
 showCharacter(14);
-
 </script>
 
 </body>
