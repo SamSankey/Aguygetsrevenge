@@ -67,8 +67,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-09-04T15:56:54.686Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -81,8 +80,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-09-20T20:06:29.452Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -94,8 +92,7 @@
               "RelativeToolTip": "public\\OtherStuff\\Script.js",
               "ViewState": "AgIAAGEAAAAAAAAAAAAowHQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-09-20T19:07:12.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T19:07:12.707Z"
             },
             {
               "$type": "Document",
@@ -107,8 +104,7 @@
               "RelativeToolTip": "public\\pages\\story\\0001.html",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAADmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-20T17:27:58.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T17:27:58.433Z"
             },
             {
               "$type": "Document",
@@ -120,8 +116,7 @@
               "RelativeToolTip": "public\\index.html",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAABZAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-08-28T00:42:00.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:42:00.2Z"
             },
             {
               "$type": "Document",
@@ -133,8 +128,7 @@
               "RelativeToolTip": "public\\pages\\extras.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-04T15:56:41.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T15:56:41.533Z"
             },
             {
               "$type": "Document",
@@ -146,8 +140,7 @@
               "RelativeToolTip": "public\\OtherStuff\\IndexCss.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-09-04T21:40:07.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T21:40:07.591Z"
             },
             {
               "$type": "Document",
@@ -172,8 +165,7 @@
               "RelativeToolTip": "public\\about.html",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAC4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-04T15:56:30.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T15:56:30.699Z"
             },
             {
               "$type": "Document",
@@ -185,8 +177,7 @@
               "RelativeToolTip": "public\\pages\\videos\\001.html",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAIoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-20T18:33:17.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T18:33:17.721Z"
             },
             {
               "$type": "Document",
@@ -198,8 +189,7 @@
               "RelativeToolTip": "public\\404.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-20T19:18:57.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-20T19:18:57.798Z"
             }
           ]
         }
