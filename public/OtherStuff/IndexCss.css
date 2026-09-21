@@ -265,7 +265,7 @@ td {
 
 .main-content {
     width:650px;
-    z-index: 2;
+    z-index: 1;
     box-sizing:border-box;
     position: relative;
 }
@@ -342,8 +342,8 @@ padding:0;
     width:70%;
     max-width:none;
     top:-100px;
-    left:500px;
-    z-index:1;
+    left:600px;
+    z-index:2;
     pointer-events:none;
 }
 .star02 {
