@@ -843,7 +843,7 @@ a:hover {
 
     .sidebar {
         position:static;
-        width:125px;
+        width: 125px;
         margin:110px -15px 0 8px;
         padding:5px;
         box-sizing:border-box;

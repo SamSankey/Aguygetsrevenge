@@ -3,11 +3,10 @@
     "",
     "\\public",
     "\\public\\images",
-    "\\public\\images\\UI",
     "\\public\\OtherStuff",
     "\\public\\pages",
     "\\public\\pages\\story"
   ],
-  "SelectedNode": "\\public\\pages\\world.html",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
